@@ -1,0 +1,1 @@
+quero que retire os jogos, a coleta de e-mail, conteudo falso e o botão de publicar jogo. em assets>capadejogo tema uma imagem chamada de animefigter o nome dos arquivos podem não estar exatamente correto mas estão semelhantes 

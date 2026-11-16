@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGNITE GAMES | Portal de Jogos & Esports</title>
+
+  <!-- Google Fonts: Oxanium, Rajdhani & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER / NAVBAR
+       ======================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <span><span class="text-red">IGNITE</span> <span class="text-yellow">GAMES</span></span>
+      </a>
+
+      <!-- Menu de Navegação -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#torneios">Torneios</a></li>
+        <li><a href="#comunidade">Comunidade</a></li>
+      </ul>
+
+      <!-- Ações do Header -->
+      <div class="nav-actions">
+        <button class="btn btn-primary-red" id="openAddGameBtn">
+          <i class="fa-solid fa-plus"></i>
+          <span>Publicar Jogo</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          Temporada Competitiva Aberta 2024
+        </div>
+        <h1 class="hero-title">
+          LIBERTE SEU PODER NO <span class="highlight-red">UNIVERSO</span> DOS <span class="highlight-yellow">GAMES</span>
+        </h1>
+        <p class="hero-description">
+          Descubra, publique e dispute títulos eletrizantes em nosso portal dedicado a jogadores e criadores. As melhores batalhas, gráficos de ponta e competições épicas em um só lugar.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary-red" id="heroPlayBtn">
+            <i class="fa-solid fa-gamepad"></i> Jogar Agora
+          </button>
+          <a href="#catalogo" class="btn btn-primary-yellow">
+            <i class="fa-solid fa-compass"></i> Explorar Catálogo
+          </a>
+        </div>
+
+        <!-- Estatísticas Rápidas -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4 id="totalGamesStat">8<span>+</span></h4>
+            <p>Jogos Cadastrados</p>
+          </div>
+          <div class="stat-item">
+            <h4>120<span>K</span></h4>
+            <p>Jogadores Online</p>
+          </div>
+          <div class="stat-item">
+            <h4>$25<span>K</span></h4>
+            <p>Em Premiações</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Destaque Heroico -->
+      <div class="hero-visual">
+        <div class="hero-card-showcase">
+          <div class="hero-card-media">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=80" alt="Cyber Strike" />
+            <span class="hero-card-badge">DESTAQUE #1</span>
+          </div>
+          <div class="hero-card-details">
+            <span class="hero-card-genre">FPS TÁTICO • ESPORTS</span>
+            <h3 class="hero-card-title">CYBER STRIKE: VENGEANCE</h3>
+            <div class="hero-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="players-count"><i class="fa-solid fa-user-group"></i> 142.850 online</span>
+            </div>
+            <button class="btn btn-primary-yellow" id="heroDetailsBtn" style="width: 100%;">
+              <i class="fa-solid fa-circle-info"></i> Ver Detalhes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Destaques Rápidos -->
+    <div class="container">
+      <div class="quick-bar">
+        <div class="quick-item">
+          <div class="quick-item-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="quick-item-info">
+            <h5>Torneios Semanais</h5>
+            <p>Dispute prêmios e rankings no clan</p>
+          </div>
+        </div>
+        <div class="quick-item">
+          <div class="quick-item-icon yellow">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="quick-item-info">
+            <h5>Jogue Direto na Web</h5>
+            <p>Sem downloads pesados, acesse em segundos</p>
+          </div>
+        </div>
+        <div class="quick-item">
+          <div class="quick-item-icon">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+          </div>
+          <div class="quick-item-info">
+            <h5>Publique Seu Jogo</h5>
+            <p>Adicione seus projetos ao acervo instantaneamente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTROLES DO CATÁLOGO (BUSCA E FILTROS)
+       ======================================================================== -->
+  <section class="catalog-controls-section" id="catalogo">
+    <div class="container controls-wrapper">
+      <div class="search-and-actions">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Pesquisar jogos por nome, categoria ou gênero..." />
+        </div>
+        <button class="btn btn-outline" onclick="portal.resetFilters()">
+          <i class="fa-solid fa-rotate-left"></i> Resetar Filtros
+        </button>
+      </div>
+
+      <!-- Barra de Filtros de Categoria -->
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="todos">
+          <i class="fa-solid fa-layer-group"></i> Todos <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="favoritos">
+          <i class="fa-solid fa-heart"></i> Favoritos <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="FPS">
+          <i class="fa-solid fa-crosshairs"></i> FPS <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="Ação">
+          <i class="fa-solid fa-fire"></i> Ação <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="MOBA">
+          <i class="fa-solid fa-shield-halved"></i> MOBA <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="RPG">
+          <i class="fa-solid fa-dragon"></i> RPG <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="Corrida">
+          <i class="fa-solid fa-gauge-high"></i> Corrida <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="Estratégia">
+          <i class="fa-solid fa-chess"></i> Estratégia <span class="cat-count">0</span>
+        </button>
+        <button class="filter-btn" data-category="Indie">
+          <i class="fa-solid fa-ghost"></i> Indie <span class="cat-count">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       GRID DE JOGOS
+       ======================================================================== -->
+  <section class="games-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Arena de Jogos</span>
+          <h2 class="section-title">BIBLIOTECA EM <span class="red-accent">DESTAQUE</span></h2>
+          <div class="section-line"></div>
+        </div>
+      </div>
+
+      <!-- Grid dinâmico gerado pelo app.js -->
+      <div class="games-grid" id="gamesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO DE TORNEIO E EVENTO
+       ======================================================================== -->
+  <section class="tournament-banner-section" id="torneios">
+    <div class="container">
+      <div class="tournament-box">
+        <div class="tournament-info">
+          <span class="tournament-tag">CAMPEONATO OFICIAL IGNITE</span>
+          <h3 class="tournament-title">TORNEIO DE FOGO & GLÓRIA</h3>
+          <p class="tournament-desc">
+            Inscreva sua equipe ou dispute partidas individuais para alcançar o topo do ranking global e conquistar troféus exclusivos no portal.
+          </p>
+          <div class="tournament-prize">
+            <div class="prize-badge">
+              <span>Premiação Total</span>
+              <strong>$50.000 BRL</strong>
+            </div>
+            <button class="btn btn-primary-yellow" onclick="portal.showToast('Inscrições abertas para o próximo sábado!', 'yellow')">
+              <i class="fa-solid fa-trophy"></i> Participar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MODAL: ADICIONAR / PUBLICAR NOVO JOGO
+       ======================================================================== -->
+  <div class="modal-overlay" id="addGameModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Fechar Modal">&times;</button>
+      <form class="modal-form" id="addGameForm">
+        <h3 class="form-title">Colocar Novo Jogo</h3>
+        <p class="form-subtitle">Preencha as informações abaixo para adicionar um jogo diretamente ao catálogo da plataforma.</p>
+
+        <div class="form-group">
+          <label for="gameTitleInput">Nome do Jogo *</label>
+          <input type="text" id="gameTitleInput" placeholder="Ex: Crimson Horizon, Shadow Blade..." required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gameCategoryInput">Gênero / Categoria *</label>
+            <select id="gameCategoryInput" required>
+              <option value="FPS">FPS / Tiro</option>
+              <option value="Ação">Ação</option>
+              <option value="MOBA">MOBA</option>
+              <option value="RPG">RPG</option>
+              <option value="Corrida">Corrida</option>
+              <option value="Estratégia">Estratégia</option>
+              <option value="Luta">Luta</option>
+              <option value="Indie">Indie</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="gameBadgeInput">Tag / Selo</label>
+            <input type="text" id="gameBadgeInput" placeholder="Ex: NOVO, HOT, FREE, BETA" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gameBadgeColorInput">Cor da Tag</label>
+            <select id="gameBadgeColorInput">
+              <option value="red">Vermelho Neon</option>
+              <option value="yellow">Amarelo Dourado</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="gamePlatformInput">Plataforma</label>
+            <input type="text" id="gamePlatformInput" placeholder="Ex: Web / PC, Steam, Mobile" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="gameImageInput">URL da Imagem de Capa</label>
+          <input type="url" id="gameImageInput" placeholder="https://exemplo.com/imagem.jpg (opcional)" />
+          <small style="color: var(--text-dim); font-size: 0.75rem; margin-top: 0.2rem; display: block;">
+            Se deixar em branco, uma imagem gamer personalizada será atribuída automaticamente.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="gameDescInput">Descrição / Sinopse do Jogo *</label>
+          <textarea id="gameDescInput" rows="3" placeholder="Fale sobre a jogabilidade, história ou objetivo do jogo..." required></textarea>
+        </div>
+
+        <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-outline modal-close-btn-alt" onclick="portal.closeModal(portal.addGameModal)">Cancelar</button>
+          <button type="submit" class="btn btn-primary-yellow">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Publicar Jogo
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: DETALHES DO JOGO
+       ======================================================================== -->
+  <div class="modal-overlay" id="gameDetailsModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Fechar Modal">&times;</button>
+      <div class="modal-header-banner">
+        <img id="modalBannerImg" src="" alt="Banner do Jogo" />
+        <div class="modal-header-overlay"></div>
+      </div>
+      <div class="modal-body">
+        <span class="modal-game-genre" id="modalGameGenre">CATEGORIA</span>
+        <h2 class="modal-game-title" id="modalGameTitle">TÍTULO DO JOGO</h2>
+
+        <div class="modal-game-specs">
+          <div class="spec-box">
+            <h6>Avaliação</h6>
+            <p id="modalGameRating">5.0 ★</p>
+          </div>
+          <div class="spec-box">
+            <h6>Plataforma</h6>
+            <p id="modalGamePlatform">PC / Web</p>
+          </div>
+          <div class="spec-box">
+            <h6>Jogadores</h6>
+            <p id="modalGamePlayers">100k</p>
+          </div>
+        </div>
+
+        <p class="modal-description" id="modalGameDesc">
+          Descrição completa do jogo.
+        </p>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary-red" id="modalPlayNowBtn">
+            <i class="fa-solid fa-play"></i> Iniciar Jogo (Arcade)
+          </button>
+          <button class="btn btn-outline" onclick="portal.showToast('Repositório e link externo sincronizados!', 'yellow')">
+            <i class="fa-solid fa-up-right-from-square"></i> Abrir Repositório
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: MINIGAME ARCADE JOGÁVEL NA TELA
+       ======================================================================== -->
+  <div class="modal-overlay" id="minigameModal">
+    <div class="modal-container" style="max-width: 680px;">
+      <button class="modal-close-btn" aria-label="Fechar">&times;</button>
+      <div class="minigame-container">
+        <span class="tournament-tag" style="font-size: 0.75rem;">SESSÃO ARCADE INSTANTÂNEA</span>
+        <h3 id="minigameTitle" style="font-family: var(--font-display); font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem;">JOGANDO</h3>
+        
+        <div class="canvas-wrapper">
+          <canvas id="minigameCanvas"></canvas>
+        </div>
+
+        <div class="minigame-controls-info">
+          Controles: <kbd>A</kbd> / <kbd>D</kbd> ou <kbd>←</kbd> <kbd>→</kbd> para Mover | <kbd>ESPAÇO</kbd> para Disparar | <kbd>R</kbd> para Reiniciar
+        </div>
+
+        <div style="margin-top: 1rem; display: flex; gap: 0.8rem; justify-content: center;">
+          <button class="btn btn-primary-yellow" id="restartMiniGameBtn">
+            <i class="fa-solid fa-rotate-right"></i> Reiniciar Partida
+          </button>
+          <button class="btn btn-outline" onclick="portal.closeModal(portal.minigameModal)">
+            <i class="fa-solid fa-xmark"></i> Fechar Jogo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer" id="comunidade">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="#inicio" class="brand-logo">
+            <div class="logo-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <span><span class="text-red">IGNITE</span> <span class="text-yellow">GAMES</span></span>
+          </a>
+          <p>O centro definitivo de jogos, torneios e lançamentos competitivos no navegador.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Página Inicial</a></li>
+            <li><a href="#catalogo">Catálogo Completo</a></li>
+            <li><a href="#torneios">Tabelas de Torneios</a></li>
+            <li><a href="javascript:void(0)" onclick="portal.openModal(portal.addGameModal)">Publicar Jogo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Categorias</h5>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="portal.currentFilter='FPS'; portal.render();">FPS Tático</a></li>
+            <li><a href="javascript:void(0)" onclick="portal.currentFilter='Ação'; portal.render();">Ação & Aventura</a></li>
+            <li><a href="javascript:void(0)" onclick="portal.currentFilter='RPG'; portal.render();">RPG Fantasia</a></li>
+            <li><a href="javascript:void(0)" onclick="portal.currentFilter='Indie'; portal.render();">Indie Roguelikes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Newsletter Gamer</h5>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Receba novidades de novos jogos e prêmios direto no seu e-mail.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Seu e-mail..." required />
+            <button type="submit" class="btn btn-primary-red" style="padding: 0.65rem 1rem;">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 IGNITE GAMES Portal. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML5, CSS3 & JavaScript Puro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Notificação do sistema</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="minigame.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
